@@ -3,151 +3,170 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f7f1">
+  <meta name="theme-color" content="#f4f2e9">
   <meta name="description" content="Hongwei Hu — research in complex networks, network evolution, link prediction, and predictability.">
   <title>Hongwei Hu | Research</title>
   <style>
-    :root {
-      --paper: #f8f7f1;
-      --ink: #252c29;
-      --muted: #64706a;
-      --accent: #495f58;
-      --rule: #cfd4ca;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: var(--accent); text-underline-offset: 4px; }
-    a:hover { color: #273f36; }
-    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-    .wrap { width: min(1264px, calc(100% - 80px)); margin-inline: auto; }
-    h1, h2, h3, p { margin-top: 0; }
-    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; }
-
-    .site-header .wrap {
-      min-height: 112px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      border-bottom: 1px solid var(--rule);
-    }
-    .identity { display: flex; flex-direction: column; line-height: 1.35; }
-    .brand { color: var(--ink); font-size: 17px; font-weight: 700; text-decoration: none; }
-    .institution { margin-top: 4px; color: var(--muted); font-size: 12px; }
-    .site-nav { display: flex; gap: clamp(20px, 3vw, 48px); white-space: nowrap; }
-    .site-nav a { color: var(--ink); font-size: 13px; text-decoration: none; }
-    .site-nav a:hover { text-decoration: underline; }
-
-    main section { scroll-margin-top: 25px; }
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(340px, 452px);
-      align-items: center;
-      gap: clamp(44px, 5vw, 80px);
-      padding: 64px 0 72px;
-    }
-    .hero-copy { padding-bottom: 4px; }
-    .eyebrow {
-      margin-bottom: 25px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
-    h1 { margin-bottom: 22px; font-size: clamp(50px, 5vw, 66px); letter-spacing: -.04em; line-height: 1.08; }
-    .lead { max-width: 680px; margin-bottom: 28px; font: clamp(21px, 2.05vw, 26px)/1.44 Georgia, "Times New Roman", serif; }
-    .summary { max-width: 650px; margin-bottom: 31px; color: var(--muted); font-size: 16px; }
-    .hero-links { display: flex; flex-wrap: wrap; gap: 14px 31px; padding-top: 22px; border-top: 2px solid var(--accent); width: fit-content; font-size: 14px; font-weight: 650; }
-    .hero-links a { text-decoration: none; }
-    .hero-links a:hover { text-decoration: underline; }
-    .hero-image { display: block; width: 100%; height: auto; aspect-ratio: 452 / 418; object-fit: cover; }
-
-    .section {
-      display: grid;
-      grid-template-columns: 320px minmax(0, 1fr);
-      column-gap: 44px;
-      padding: 38px 0 57px;
-      border-top: 1px solid var(--rule);
-    }
-    .section-heading h2 { margin: 0; font-size: clamp(30px, 2.75vw, 38px); letter-spacing: -.035em; line-height: 1.18; }
-    .section-content { min-width: 0; }
-    .research-item, .paper, .project, .talk { border-top: 1px solid var(--rule); }
-    .research-item { padding: 27px 0 26px; }
-    .research-item:last-child, .paper:last-child { border-bottom: 1px solid var(--rule); }
-    .research-item h3 { margin-bottom: 5px; font-size: 27px; letter-spacing: -.018em; line-height: 1.25; }
-    .research-item p, .project p, .talk p { margin: 0; color: var(--muted); font-size: 15px; }
-
-    .paper {
-      display: grid;
-      grid-template-columns: 62px minmax(0, 1fr) 68px;
-      gap: 20px;
-      align-items: start;
-      padding: 28px 0 27px;
-    }
-    .year { padding-top: 4px; color: var(--accent); font-size: 14px; }
-    .paper h3 { margin-bottom: 5px; font-size: clamp(20px, 1.75vw, 25px); letter-spacing: -.018em; line-height: 1.3; }
-    .paper p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
-    .paper a { padding-top: 5px; font-size: 12px; font-weight: 700; text-align: right; text-decoration: none; white-space: nowrap; }
-    .paper a:hover { text-decoration: underline; }
-
-    .projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 38px; }
-    .project { padding: 25px 0 26px; }
-    .project h3 { margin-bottom: 7px; font-size: 23px; line-height: 1.3; }
-    .talk { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 20px; padding: 25px 0; }
-    .talk h3 { margin-bottom: 5px; font-size: 22px; line-height: 1.3; }
-
-    footer .wrap { display: flex; justify-content: space-between; gap: 20px; padding: 25px 0 34px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
-    footer a { color: inherit; }
-
-    @media (max-width: 1050px) {
-      .section { grid-template-columns: 245px minmax(0, 1fr); gap: 28px; }
-      .section-heading h2 { font-size: 31px; }
-      .hero { grid-template-columns: minmax(0, 1fr) minmax(300px, 40%); gap: 35px; }
-    }
-    @media (max-width: 760px) {
-      .wrap { width: min(100% - 42px, 600px); }
-      .site-header .wrap { min-height: 0; display: block; padding: 20px 0 16px; }
-      .site-nav { margin-top: 19px; gap: 24px; overflow-x: auto; padding-bottom: 3px; }
-      .hero { display: flex; flex-direction: column; align-items: stretch; gap: 34px; padding: 52px 0 54px; }
-      .hero-image { width: min(100%, 520px); }
-      .section { display: block; padding: 32px 0 48px; }
-      .section-heading { margin-bottom: 24px; }
-      .section-heading h2 { font-size: 34px; }
-      .paper h3 { font-size: 22px; }
-    }
-    @media (max-width: 520px) {
-      .wrap { width: calc(100% - 36px); }
-      .eyebrow { font-size: 10px; letter-spacing: .1em; }
-      h1 { font-size: 48px; }
-      .lead { font-size: 21px; }
-      .summary { font-size: 15px; }
-      .research-item h3 { font-size: 24px; }
-      .paper { grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
-      .paper a { grid-column: 2; padding-top: 0; text-align: left; }
-      .paper h3 { font-size: 20px; }
-      .paper p { font-size: 13px; }
-      .projects { grid-template-columns: 1fr; }
-      .talk { grid-template-columns: 48px minmax(0, 1fr); gap: 12px; }
-      footer .wrap { flex-direction: column; gap: 6px; }
-    }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+:root{
+  --paper:#f4f2e9;--navy:#193d59;--ink:#202b31;--muted:#53636a;
+  --rule:#aeb8b7;--soft:#e8ece8;--red:#b84635;--ochre:#ad791c;
+  --sans:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.56 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--navy);text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+.wrap{width:min(1300px,calc(100% - 80px));margin-inline:auto}
+h1,h2,h3,p,figure{margin:0}
+main section{scroll-margin-top:28px}
+.site-header .wrap{min-height:106px;display:flex;align-items:center;justify-content:space-between;gap:32px;border-bottom:1px solid var(--ink)}
+.identity{display:flex;align-items:center;gap:14px;min-width:0;text-decoration:none}
+.mark{display:grid;place-items:center;flex:none;width:40px;height:40px;background:var(--navy);color:var(--paper);font-size:22px;font-weight:700}
+.identity-text{display:grid;gap:1px;min-width:0}
+.brand{color:var(--ink);font-size:17px;font-weight:700;line-height:1.2}
+.institution{color:var(--muted);font-size:12px;line-height:1.3}
+.site-nav{display:flex;align-items:center;gap:clamp(15px,2.6vw,42px)}
+.site-nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.site-nav a:hover{color:var(--red)}
+.hero{display:grid;grid-template-columns:minmax(0,.91fr) minmax(0,1.09fr);margin-top:42px;min-height:590px}
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:clamp(34px,4vw,61px);background:var(--navy);color:var(--paper)}
+.hero-kicker{font:600 12px/1.35 var(--mono);color:#dce5e4}
+h1{margin:49px 0 30px;font-size:clamp(69px,6.1vw,92px);font-weight:700;line-height:.99;letter-spacing:-.058em}
+.hero-lead{max-width:470px;padding-top:24px;border-top:1px solid #8ea5af;font:28px/1.22 var(--serif);letter-spacing:-.015em}
+.hero-description{max-width:465px;margin-top:24px;font-size:16.5px;line-height:1.55;color:#edf1ed}
+.hero-summary{max-width:465px;margin-top:12px;font-size:15px;line-height:1.55;color:#dce6e7}
+.hero-links{display:flex;flex-wrap:wrap;gap:9px 24px;margin-top:auto;padding-top:26px}
+.hero-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--paper);font-size:14px;font-weight:600}
+.hero-figure{display:flex;flex-direction:column;min-width:0;padding:clamp(27px,3.2vw,44px);background:var(--soft);color:var(--navy)}
+.figure-top{display:flex;justify-content:space-between;gap:16px;font:600 12px/1.3 var(--mono)}
+.figure-top span:last-child{color:var(--muted)}
+.figure-art{display:block;width:100%;height:auto;max-height:445px;margin:auto 0}
+.figure-art .observed{stroke:var(--navy);stroke-width:2.25;fill:none;stroke-linecap:round}
+.figure-art .node{fill:var(--soft);stroke:var(--navy);stroke-width:2.4}
+.figure-art .candidate{stroke:var(--red);stroke-width:2.9;stroke-dasharray:7 7;fill:none}
+.figure-art .history{fill:var(--ochre);font:600 25px var(--mono)}
+.figure-art .label{fill:var(--navy);font:500 25px var(--serif)}
+.figure-art .candidate-label{fill:var(--red);font:600 20px var(--sans)}
+.figure-art .guide{stroke:#c4cfcd;stroke-width:1;fill:none}
+.figure-caption{border-top:1px solid var(--navy);padding-top:17px}
+.figure-caption p{max-width:580px;font-size:14px;line-height:1.5}
+.figure-key{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:15px;color:var(--ink);font-size:13px}
+.figure-key span{display:inline-flex;align-items:center;gap:8px}
+.figure-key i{display:inline-block;width:23px;height:0;border-top:2px solid var(--navy)}
+.figure-key .history-key{width:auto;height:auto;border:0;color:var(--ochre);font:700 17px/1 var(--mono)}
+.figure-key .future-key{border-color:var(--red);border-top-style:dashed}
+.section-number{display:block;color:var(--navy);font:700 23px/1.2 var(--sans)}
+.section-title{margin-top:13px;font-size:clamp(36px,3.35vw,42px);font-weight:700;line-height:1.07;letter-spacing:-.04em}
+.section-intro{margin-top:16px;color:var(--muted);font-size:15px;line-height:1.5}
+.research-section{display:grid;grid-template-columns:minmax(250px,.45fr) minmax(0,1fr);gap:58px;padding:98px 0 103px;border-bottom:1px solid var(--ink)}
+.research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:65px 44px}
+.research-item{position:relative;padding-top:19px}
+.research-item::before{content:"";position:absolute;top:0;left:0;right:0;border-top:1px solid var(--rule)}
+.research-item:nth-child(-n+2)::before{border-color:var(--navy);border-width:2px}
+.item-number{display:block;margin-bottom:16px;color:var(--navy);font:600 13px/1.3 var(--mono)}
+.research-item h3,.project h3{font-size:clamp(21px,1.9vw,24px);line-height:1.22;font-weight:650;letter-spacing:-.022em}
+.research-item p{max-width:355px;margin-top:10px;color:var(--muted);font-size:16px;line-height:1.5}
+.publications-section{padding:83px 0 98px;border-bottom:1px solid var(--ink)}
+.publications-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:47px}
+.publications-head .section-intro{max-width:330px;margin:0 0 2px;text-align:right}
+.paper{display:grid;grid-template-columns:90px minmax(0,1fr) 78px;gap:30px;align-items:start;padding:30px 0 34px;border-top:1px solid var(--rule)}
+.paper:last-child{border-bottom:1px solid var(--rule)}
+.year{padding-top:5px;color:var(--navy);font:600 15px/1.4 var(--mono)}
+.paper h3{font:400 clamp(23px,2.15vw,27px)/1.25 var(--serif);letter-spacing:-.012em}
+.paper p{margin-top:10px;color:var(--muted);font-size:14.5px;line-height:1.55}
+.paper strong{color:var(--ink);font-weight:700}
+.paper a{display:inline-flex;justify-content:flex-end;align-items:center;min-height:42px;font-size:14px;font-weight:650;white-space:nowrap}
+.projects-section{display:grid;grid-template-columns:minmax(250px,.45fr) minmax(0,1fr);gap:58px;padding:92px 0 106px}
+.project-list{display:grid;gap:38px}
+.project{display:grid;grid-template-columns:46px minmax(0,1fr);gap:14px}
+.project .item-number{margin:4px 0 0}
+.project p{max-width:700px;margin-top:9px;color:var(--muted);font-size:16px;line-height:1.54}
+.talks-section{padding:0 0 97px}
+.talks-inner{display:grid;grid-template-columns:minmax(250px,.45fr) minmax(0,1fr);gap:58px;padding:48px 0 55px;border-top:2px solid var(--navy);border-bottom:1px solid var(--rule)}
+.talk{display:grid;grid-template-columns:70px minmax(0,1fr);gap:22px;padding-top:4px}
+.talk h3{font:400 clamp(24px,2.2vw,28px)/1.25 var(--serif)}
+.talk p{margin-top:13px;color:var(--muted);font-size:16px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;padding:23px 0 35px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
+footer a{color:var(--navy)}
+@media(max-width:1100px){
+  .wrap{width:min(100% - 56px,1300px)}
+  .hero{min-height:560px}
+  .hero-copy{padding:38px}
+  h1{font-size:clamp(65px,7vw,80px)}
+  .hero-figure{padding:31px}
+  .research-section,.projects-section,.talks-inner{grid-template-columns:235px minmax(0,1fr);gap:37px}
+  .research-grid{gap:52px 27px}
+}
+@media(max-width:860px){
+  .site-header .wrap{min-height:94px}
+  .institution{max-width:310px}
+  .site-nav{gap:16px}
+  .hero{grid-template-columns:1fr;margin-top:30px}
+  .hero-copy{min-height:510px;padding:45px}
+  h1{margin-top:42px}
+  .hero-figure{min-height:490px;padding:35px 45px}
+  .figure-art{max-height:360px}
+  .research-section,.projects-section,.talks-inner{grid-template-columns:1fr;gap:37px}
+  .research-section{padding:75px 0 83px}
+  .projects-section{padding:76px 0 84px}
+  .talks-inner{gap:29px}
+  .research-grid{gap:48px 42px}
+}
+@media(max-width:620px){
+  .wrap{width:calc(100% - 36px)}
+  .site-header .wrap{display:block;padding-top:19px}
+  .site-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:16px}
+  .site-nav a{justify-content:center;font-size:13px;min-height:45px}
+  .site-nav a:first-child{justify-content:flex-start}
+  .site-nav a:last-child{justify-content:flex-end}
+  .hero{margin-top:19px}
+  .hero-copy{min-height:0;padding:32px 29px 27px}
+  h1{margin:39px 0 29px;font-size:clamp(64px,17vw,82px)}
+  .hero-lead{font-size:26px}
+  .hero-description{font-size:16px}
+  .hero-summary{font-size:14.5px}
+  .hero-links{margin-top:18px}
+  .hero-figure{min-height:0;padding:25px 20px 27px}
+  .figure-art{margin:24px 0 7px;max-height:none}
+  .figure-top{font-size:11px}
+  .figure-key{font-size:13px;gap:7px 13px}
+  .figure-caption p{font-size:14px}
+  .research-section{padding:64px 0 74px}
+  .research-grid{grid-template-columns:1fr;gap:29px}
+  .research-item{padding-top:17px}
+  .item-number{margin-bottom:10px}
+  .research-item p{max-width:none}
+  .publications-section{padding:64px 0 72px}
+  .publications-head{display:block;margin-bottom:31px}
+  .publications-head .section-intro{margin-top:14px;text-align:left}
+  .paper{grid-template-columns:60px minmax(0,1fr);gap:12px;padding:24px 0 28px}
+  .year{font-size:14px}
+  .paper h3{font-size:23px}
+  .paper p{font-size:14px}
+  .paper a{grid-column:2;justify-content:flex-start;min-height:37px}
+  .projects-section{padding:66px 0 74px}
+  .project-list{gap:32px}
+  .project{grid-template-columns:38px minmax(0,1fr);gap:8px}
+  .talks-section{padding-bottom:70px}
+  .talks-inner{padding:36px 0 42px}
+  .talk{grid-template-columns:61px minmax(0,1fr);gap:11px}
+  .talk h3{font-size:24px}
+  footer .wrap{flex-direction:column;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <div class="identity">
-        <a class="brand" href="#top">Hongwei Hu</a>
-        <span class="institution">Southern University of Science and Technology</span>
-      </div>
+      <a class="identity" href="#top" aria-label="Hongwei Hu, back to top">
+        <span class="mark" aria-hidden="true">H</span>
+        <span class="identity-text"><span class="brand">Hongwei Hu</span><span class="institution">Southern University of Science and Technology</span></span>
+      </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
@@ -159,49 +178,77 @@
   <main id="top" class="wrap">
     <section class="hero" aria-labelledby="name">
       <div class="hero-copy">
-        <p class="eyebrow">Network science / Structure and dynamics</p>
-        <h1 id="name">Hongwei Hu</h1>
-        <p class="lead">I study how networks evolve, what their structure reveals, and what we can predict from incomplete information.</p>
-        <p class="summary">My work spans network reconstruction, link prediction, cross-network transfer, and predictability. I also study navigation and sequential decisions.</p>
+        <p class="hero-kicker">RESEARCH PROFILE / 2026</p>
+        <h1 id="name">Hongwei<br>Hu.</h1>
+        <p class="hero-lead">Networks, inference, and decisions.</p>
+        <p class="hero-description">I study how networks evolve, what their structure reveals, and what we can predict from incomplete information.</p>
+        <p class="hero-summary">My work spans network reconstruction, link prediction, cross-network transfer, and predictability. I also study navigation and sequential decisions.</p>
         <div class="hero-links">
           <a href="https://scholar.google.com/citations?user=fZw9sV8AAAAJ">Google Scholar ↗</a>
           <a href="#publications">Selected publications ↓</a>
         </div>
       </div>
-      <img class="hero-image" src="./assets/network-material-study.svg" width="870" height="810" alt="" decoding="async">
+      <figure class="hero-figure" aria-labelledby="figure-title">
+        <div class="figure-top"><span id="figure-title">FIG. 01 / AN INVERSE PROBLEM</span><span>CONCEPTUAL</span></div>
+        <svg class="figure-art" viewBox="0 0 680 458" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">Observed structure, unknown edge history, possible future link</title>
+          <desc id="diagram-desc">Solid navy lines form the currently observed graph G. Ochre question marks mark the unknown order of past edges. A red dashed curve marks one possible future link that is not in G.</desc>
+          <path class="guide" d="M35 390H645M35 45V390"/>
+          <path class="observed" d="M113 145L244 94L397 139L548 74M113 145L82 292L238 316L441 297L600 303M244 94L238 316M397 139L441 297M548 74L600 303M244 94L397 139"/>
+          <path class="candidate" d="M82 292C131 402 355 417 441 297"/>
+          <g class="nodes">
+            <circle class="node" cx="113" cy="145" r="7"/><circle class="node" cx="244" cy="94" r="7"/>
+            <circle class="node" cx="397" cy="139" r="7"/><circle class="node" cx="548" cy="74" r="7"/>
+            <circle class="node" cx="82" cy="292" r="7"/><circle class="node" cx="238" cy="316" r="7"/>
+            <circle class="node" cx="441" cy="297" r="7"/><circle class="node" cx="600" cy="303" r="7"/>
+          </g>
+          <text class="history" x="178" y="105">?</text><text class="history" x="253" y="217">?</text>
+          <text class="history" x="490" y="279">?</text>
+          <text class="label" x="62" y="260">G</text>
+          <text class="candidate-label" x="248" y="414">possible future link</text>
+        </svg>
+        <figcaption class="figure-caption">
+          <p>From an observed network, what can we infer about its hidden history and its future connections?</p>
+          <div class="figure-key" aria-label="Diagram legend">
+            <span><i aria-hidden="true"></i> observed links</span>
+            <span><i class="history-key" aria-hidden="true">?</i> unknown past order</span>
+            <span><i class="future-key" aria-hidden="true"></i> possible future link</span>
+          </div>
+        </figcaption>
+      </figure>
     </section>
 
-    <section class="section" id="research" aria-labelledby="research-title">
-      <div class="section-heading"><h2 id="research-title">Research</h2></div>
-      <div class="section-content">
-        <article class="research-item"><h3>Network navigation</h3><p>Efficient routing in spatial networks under structural costs.</p></article>
-        <article class="research-item"><h3>Sequential decision-making</h3><p>Online selection and matching with limited information.</p></article>
-        <article class="research-item"><h3>Network evolution</h3><p>Recovering hidden edge histories from observed network structure.</p></article>
-        <article class="research-item"><h3>Link prediction &amp; transfer</h3><p>Predicting links and studying when insights transfer between networks.</p></article>
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><span class="section-number">01</span><h2 class="section-title" id="research-title">Research</h2><p class="section-intro">Structure, dynamics, and decisions.</p></div>
+      <div class="research-grid">
+        <article class="research-item"><span class="item-number">01</span><h3>Network navigation</h3><p>Efficient routing in spatial networks under structural costs.</p></article>
+        <article class="research-item"><span class="item-number">02</span><h3>Sequential decision-making</h3><p>Online selection and matching with limited information.</p></article>
+        <article class="research-item"><span class="item-number">03</span><h3>Network evolution</h3><p>Recovering hidden edge histories from observed network structure.</p></article>
+        <article class="research-item"><span class="item-number">04</span><h3>Link prediction &amp; transfer</h3><p>Predicting links and studying when insights transfer between networks.</p></article>
       </div>
     </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
-      <div class="section-heading"><h2 id="publications-title">Selected publications</h2></div>
-      <div class="section-content">
+    <section class="publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="publications-head"><div><span class="section-number">02</span><h2 class="section-title" id="publications-title">Selected publications</h2></div><p class="section-intro">Selected work in chronological order.</p></div>
+      <div class="publication-list">
         <article class="paper"><div class="year">2026</div><div><h3>Predictability of complex systems</h3><p>En Xu, Yilin Bi, <strong>Hongwei Hu</strong>, et al. · <strong><em>Physics Reports</em></strong> 1166, 1–107.</p></div><a href="https://doi.org/10.1016/j.physrep.2026.01.001">DOI ↗</a></article>
         <article class="paper"><div class="year">2025</div><div><h3>Restoring Network Evolution from Static Structure</h3><p>Jiu Zhang, Zhanwei Du, <strong>Hongwei Hu</strong>, et al. · arXiv:2512.08209. Preprint.</p></div><a href="https://arxiv.org/abs/2512.08209">arXiv ↗</a></article>
         <article class="paper"><div class="year">2023</div><div><h3>A sequential re-opening of provinces for China’s zero-COVID policy</h3><p>Cong Xu, Xiangrong Wang, <strong>Hongwei Hu</strong>, et al. · <strong><em>Nature Medicine</em></strong> 29, 2977–2978. <strong>Co-first author</strong>.</p></div><a href="https://doi.org/10.1038/s41591-022-02177-4">DOI ↗</a></article>
       </div>
     </section>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><h2 id="projects-title">Current projects</h2></div>
-      <div class="section-content projects">
-        <article class="project"><h3>Transferable link prediction</h3><p>Using recovered edge order to improve prediction in new networks and identify the limits of temporal information.</p></article>
-        <article class="project"><h3>Sequential choice</h3><p>Studying sliding-window strategies for online matching through theory and data.</p></article>
-        <article class="project"><h3>Network navigation</h3><p>Studying navigation in spatial networks when links have structural costs.</p></article>
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><span class="section-number">03</span><h2 class="section-title" id="projects-title">Current projects</h2></div>
+      <div class="project-list">
+        <article class="project"><span class="item-number">01</span><div><h3>Transferable link prediction</h3><p>Using recovered edge order to improve prediction in new networks and identify the limits of temporal information.</p></div></article>
+        <article class="project"><span class="item-number">02</span><div><h3>Sequential choice</h3><p>Studying sliding-window strategies for online matching through theory and data.</p></div></article>
+        <article class="project"><span class="item-number">03</span><div><h3>Network navigation</h3><p>Studying navigation in spatial networks when links have structural costs.</p></div></article>
       </div>
     </section>
 
-    <section class="section" id="talks" aria-labelledby="talks-title">
-      <div class="section-heading"><h2 id="talks-title">Talks</h2></div>
-      <div class="section-content">
+    <section class="talks-section" id="talks" aria-labelledby="talks-title">
+      <div class="talks-inner">
+        <div class="section-heading"><span class="section-number">04</span><h2 class="section-title" id="talks-title">Talks</h2></div>
         <article class="talk"><div class="year">2026</div><div><h3>Navigation on Spatial Networks with Structural Costs</h3><p>CCCN 2026 · Urumqi, China.</p></div></article>
       </div>
     </section>
