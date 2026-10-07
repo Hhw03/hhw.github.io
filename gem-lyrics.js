@@ -1,154 +1,845 @@
-// 30 条摘句来自用户上传的 PDF；保留原文与歌曲标注。
-// 歌词及歌曲归属尚未逐条与官方来源核对。
+// 原有 30 条摘句已补充来源；新增 50 条短摘句，共 80 条。
+// 来源核对日期：2026-10-07。文本统一使用简体，标点按网页展示整理。
+// official-lyrics：摘句与官方发布页说明栏歌词核对。
+// official-release-platform-lyrics：官方来源确认歌曲及演唱归属，摘句另与音乐平台/歌词页交叉核对，仍需官方逐字复核。
+// sourceUrl 保留可核验的官方发布页；翻唱、改编及特定现场版本在记录中注明。
 window.GEM_LYRICS = [
   {
     "id": "gem-01",
     "text": "未来何从何去，你快乐我也就没关系。",
-    "song": "多远都要在一起"
+    "song": "多远都要在一起",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=D9ksLn6hZ7Q",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-02",
     "text": "说什么你爱我，如果骗我，我宁愿你沉默。",
-    "song": "泡沫"
+    "song": "泡沫",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=mGeiABBB5f8",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-03",
-    "text": "你所有承诺，只是一刹花火。",
-    "song": "泡沫"
+    "text": "你所有承诺，虽然都太脆弱。",
+    "song": "泡沫",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=mGeiABBB5f8",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-04",
     "text": "给你我的心，能否请你别遗弃。",
-    "song": "爱你"
+    "song": "A.I.N.Y. 爱你",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=-gaB9ov-Om0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-05",
     "text": "快乐原来，如此简单，你在身旁，就是我的天堂。",
-    "song": "画"
+    "song": "画",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=RRYAYM0rYns",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-06",
     "text": "白鸽困在摩天的大厦，长出了妖精的尾巴。",
-    "song": "一路逆风"
+    "song": "一路逆风",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=C117NWgCJ88",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-07",
-    "text": "别在等待，没有现在，能等到什么未来。",
-    "song": "下一秒"
+    "text": "别再等待，没有现在，能等到什么未来。",
+    "song": "下一秒",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=dxkVccdvDvQ",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-08",
     "text": "别对白太俗套，转角有个更加好。",
-    "song": "失真"
+    "song": "失真",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=mbVm2r3r5Ks",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-09",
     "text": "生活就像一场，繁华里的流浪。",
-    "song": "一路逆风"
+    "song": "一路逆风",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=C117NWgCJ88",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-10",
     "text": "爱能克服远距离，多远都要在一起。",
-    "song": "多远都要在一起"
+    "song": "多远都要在一起",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=D9ksLn6hZ7Q",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-11",
     "text": "相拥着寂寞，难道就不寂寞。",
-    "song": "泡沫"
+    "song": "泡沫",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=mGeiABBB5f8",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-12",
     "text": "成长要学会独处，虽然有一点孤独。",
-    "song": "于是"
+    "song": "于是",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=0tGgnh6F1YI",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-13",
     "text": "忘前路忘旧物，忘心忘你忘最初。",
-    "song": "桃花诺"
+    "song": "桃花诺",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=SJHWJvOmpFY",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricist": "张赢"
   },
   {
     "id": "gem-14",
     "text": "早该相信那些预言，我们也没有多特别。",
-    "song": "再见"
+    "song": "再见",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ri212geRHQw",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "Live Piano Session"
   },
   {
     "id": "gem-15",
     "text": "为什么世界愈繁华，人性愈贫乏。",
-    "song": "一路逆风"
+    "song": "一路逆风",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=C117NWgCJ88",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-16",
     "text": "被欺骗算什么，早已习惯难过。",
-    "song": "烟熏妆"
+    "song": "烟熏妆",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=8lg1ymm99CQ",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-17",
     "text": "你的出现，你的告别，都在一瞬间。",
-    "song": "瞬间"
+    "song": "瞬间",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ziDO6HWb4R8",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-18",
     "text": "咖啡飘散过香味，剩苦涩陪着我。",
-    "song": "回忆的沙漏"
+    "song": "回忆的沙漏",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=U-cIHm7sOQY",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "10周年版本",
+    "lyricist": "庭竹"
   },
   {
     "id": "gem-19",
     "text": "爱情的起点，都是最美的瞬间。",
-    "song": "再见"
+    "song": "再见",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ri212geRHQw",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "Live Piano Session"
   },
   {
     "id": "gem-20",
-    "text": "梦里鲜红的蔷薇，睁眼苍白的玫瑰。",
-    "song": "红蔷薇白玫瑰"
+    "text": "梦里鲜红的蔷薇，睁眼是苍白的玫瑰。",
+    "song": "红蔷薇白玫瑰",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=c21dGpyxU-M",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "Eyes, Nose, Lips 中文改编",
+    "originalArtist": "TAEYANG",
+    "lyricist": "中文词：G.E.M. 邓紫棋"
   },
   {
     "id": "gem-21",
     "text": "岩石里的花会开，离开的你会回来。",
-    "song": "岩石里的花"
+    "song": "岩石里的花",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=I1Kx8Ii4eYk",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-22",
     "text": "新患旧伤，我却更坚强。",
-    "song": "一路逆风"
+    "song": "一路逆风",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=C117NWgCJ88",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-23",
     "text": "不能相依，还能如何为命。",
-    "song": "末日"
+    "song": "末日",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=qWCNo27q5KM",
+    "verificationStatus": "official-release-platform-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricSource": "Mulanci 歌词页（仍需官方逐字核对）",
+    "lyricSourceUrl": "https://www.mulanci.org/lyric/tl155292/"
   },
   {
     "id": "gem-24",
     "text": "这一世牵绊，纠结，触动了心弦。",
-    "song": "桃花诺"
+    "song": "桃花诺",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=SJHWJvOmpFY",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricist": "张赢"
   },
   {
     "id": "gem-25",
     "text": "单纯像沙漠中的花，周围是咆哮的风沙。",
-    "song": "一路逆风"
+    "song": "一路逆风",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=C117NWgCJ88",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-26",
     "text": "爱情就像，蓝蓝天上，一片留白有你陪我想象。",
-    "song": "画"
+    "song": "画",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=RRYAYM0rYns",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-27",
-    "text": "我能习惯远距离爱总是身不由己。",
-    "song": "多远都要在一起"
+    "text": "我能习惯远距离，爱总是身不由己。",
+    "song": "多远都要在一起",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=D9ksLn6hZ7Q",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-28",
     "text": "曾以为会直到，永远再远也相拥。",
-    "song": "失真"
+    "song": "失真",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=mbVm2r3r5Ks",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   },
   {
     "id": "gem-29",
     "text": "我偶尔也会偷偷的希望，时间像木马回转。",
-    "song": "偶尔"
+    "song": "偶尔",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=IiryAVmHMCE",
+    "verificationStatus": "official-release-platform-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricSource": "JOOX 歌词页（仍需官方逐字核对）",
+    "lyricSourceUrl": "https://www.joox.com/hk/single/dtC_DgOEM7L4kSvhjJ2vkQ%3D%3D"
   },
   {
     "id": "gem-30",
     "text": "世界我看得再远，始终有一个盲点。",
-    "song": "盲点"
+    "song": "盲点",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=rzzul2fmufI",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-31",
+    "text": "面对浩瀚的星海",
+    "song": "光年之外",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=T4SimnaiktU",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-32",
+    "text": "还没到的樱花季",
+    "song": "倒数",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ma7r2HGqwXs",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-33",
+    "text": "我无力抗拒失重",
+    "song": "来自天堂的魔鬼",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=FWtbGkpdoP4",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-34",
+    "text": "挽手说梦话",
+    "song": "喜欢你",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=4OqXWzekVw4",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "翻唱 Beyond",
+    "originalArtist": "Beyond",
+    "lyricist": "黄家驹"
+  },
+  {
+    "id": "gem-35",
+    "text": "而故事还没有走到结局",
+    "song": "新的心跳",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=vDR-e3W6ARc",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-36",
+    "text": "我每天都重新出发",
+    "song": "单行的轨道",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=rwrYO8S1wX4",
+    "verificationStatus": "official-release-platform-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricSource": "JOOX 歌词页（仍需官方逐字核对）",
+    "lyricSourceUrl": "https://www.joox.com/hk/single/tipWXoKsgkZ8_yRO7WxtBg%3D%3D"
+  },
+  {
+    "id": "gem-37",
+    "text": "我只知道我在想你",
+    "song": "我的秘密",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=8XcmT8-ZByA",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-38",
+    "text": "用速度换一点痛快",
+    "song": "你把我灌醉",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=l8pJxVZKW6w",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "翻唱 黄大炜",
+    "originalArtist": "黄大炜",
+    "lyricist": "姚若龙"
+  },
+  {
+    "id": "gem-39",
+    "text": "埋在心底的爱慕",
+    "song": "睡公主",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=3FddFXcH6QY",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "language": "粤语"
+  },
+  {
+    "id": "gem-40",
+    "text": "感动是并着肩的安静",
+    "song": "查克靠近",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=GG4Mf8t_TAk",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-41",
+    "text": "想闭上眼睛把一切暂停",
+    "song": "透明",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=-CwoylxqVPA",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-42",
+    "text": "把歌唱完重新开始",
+    "song": "句号",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=7XlqcS6B7WA",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-43",
+    "text": "人生真的不该这么过",
+    "song": "差不多姑娘",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=s4pxJ-1QLQg",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-44",
+    "text": "赐我清澈一双眼",
+    "song": "摩天动物园",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=A6gIat5xLWI",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-45",
+    "text": "如果再见，微笑点头",
+    "song": "很久以后",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=2BEFukvLZfI",
+    "verificationStatus": "official-release-platform-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricSource": "LINE MUSIC 歌词页（官方 MV 说明栏也引用本摘句）",
+    "lyricSourceUrl": "https://music-tw.line.me/track/1824998004"
+  },
+  {
+    "id": "gem-46",
+    "text": "等待下一次再遇见你",
+    "song": "好想好想你",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=P6QXo88IG2c",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-47",
+    "text": "洗净年月泼的墨",
+    "song": "孤独",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=CvgNQmXqX9M",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-48",
+    "text": "别怕漫长的黑夜",
+    "song": "平凡天使",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=N-xQLlNftXQ",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-49",
+    "text": "那让我苦中作乐吧",
+    "song": "超能力",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=-7uaa_ONFo0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-50",
+    "text": "学懂怎样识别你",
+    "song": "两个你",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ta5Q0vv9DIk",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "粤语 Live（第十五届咪咕汇）",
+    "language": "粤语"
+  },
+  {
+    "id": "gem-51",
+    "text": "若与你再遇见",
+    "song": "平行世界",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=JW52KtyGMBI",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-52",
+    "text": "不是距离而是昨天",
+    "song": "倒流时间",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=7Jhdn2riuC0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-53",
+    "text": "总会等到新的季节",
+    "song": "GLORIA",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=stGUpMav1sc",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "《启示录》中文版本"
+  },
+  {
+    "id": "gem-54",
+    "text": "我因爱而在，为爱醒来",
+    "song": "老人与海",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=7CgVQPwd9M8",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-55",
+    "text": "你在我眼里多美好",
+    "song": "FIND YOU",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=1YWmCiWCxlE",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "《启示录》中文版本"
+  },
+  {
+    "id": "gem-56",
+    "text": "我把自由放你手里",
+    "song": "离心力",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=2203HZpe0_Q",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-57",
+    "text": "我该如何存在",
+    "song": "少年与海",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=5R4y4ZVgR70",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-58",
+    "text": "至少今夜有你在",
+    "song": "不想回家",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=eyn1qklZhPo",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-59",
+    "text": "还有没有后来",
+    "song": "冰河时代",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=hwENuZHFTj0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-60",
+    "text": "变成守护你的星",
+    "song": "你不是第一个离开的人",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=F4vGFscB_fg",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-61",
+    "text": "自由在夜的尽头",
+    "song": "夜的尽头",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=3OSGYTj08rU",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-62",
+    "text": "我们的未来无边",
+    "song": "天空没有极限",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=BG6p-7zBkvY",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "Live feat. 五月天"
+  },
+  {
+    "id": "gem-63",
+    "text": "把星星还给你的夜空",
+    "song": "让世界暂停一分钟",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=wpyVeB9y0ok",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-64",
+    "text": "活在你的眼中",
+    "song": "只有我和你的地方",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=UNgHD07NQKU",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-65",
+    "text": "不移我的决心",
+    "song": "万国觉醒",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=OiN5f7DT1Og",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-66",
+    "text": "越艰巨越狂热",
+    "song": "无双的王者",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=LcNlzut_n6o",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-67",
+    "text": "释放我心里那自由的马",
+    "song": "另一个童话",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=5FK0qCEQ3L0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-68",
+    "text": "爱情从不问为什么",
+    "song": "那一夜",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=ugVNDvnDDpA",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-69",
+    "text": "拿得起你也放得了我",
+    "song": "错过不错",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=xVdKKL4ENwU",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-70",
+    "text": "重燃那渐冷却的火",
+    "song": "睡皇后",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=TsrxItDMdI0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "language": "粤语"
+  },
+  {
+    "id": "gem-71",
+    "text": "光从未熄灭",
+    "song": "爱如意",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=Nk9pK_H9rKs",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricist": "程诗迦"
+  },
+  {
+    "id": "gem-72",
+    "text": "但如果真的爱不会算计",
+    "song": "唯一",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=xXr4Z7HAZCE",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "时光音乐会 Live 翻唱",
+    "originalArtist": "告五人",
+    "lyricist": "潘云安；改编：G.E.M. 邓紫棋"
+  },
+  {
+    "id": "gem-73",
+    "text": "我会越挫越强",
+    "song": "心之焰",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=HI5SwcJToSI",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "lyricist": "林乔、张赢"
+  },
+  {
+    "id": "gem-74",
+    "text": "从今以后为自己而活",
+    "song": "毒苹果",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=2RINai2fjr0",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-75",
+    "text": "落叶或雪迹也都美丽",
+    "song": "奇迹",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=FllV2qTT-Ko",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-76",
+    "text": "一颗不服输的决心",
+    "song": "穿越火线",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=Mb1ZCAoK5f4",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-77",
+    "text": "像湖面上的星空",
+    "song": "多美丽",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=D7ygm5OgJsk",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-78",
+    "text": "模糊地迷恋你一场",
+    "song": "有心人",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=Wm1bG90SX98",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07",
+    "version": "官方钢琴致敬发布页收录歌词",
+    "originalArtist": "张国荣",
+    "lyricist": "林夕"
+  },
+  {
+    "id": "gem-79",
+    "text": "想你到凌晨",
+    "song": "给你的歌",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=-MCBiMLnG7g",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
+  },
+  {
+    "id": "gem-80",
+    "text": "回忆里我们牵着双手",
+    "song": "写不完的温柔",
+    "artist": "G.E.M. 邓紫棋",
+    "source": "G.E.M. 官方 YouTube 发布页",
+    "sourceUrl": "https://www.youtube.com/watch?v=D7oQ2Yi_y2I",
+    "verificationStatus": "official-lyrics",
+    "verifiedAt": "2026-10-07"
   }
 ];
