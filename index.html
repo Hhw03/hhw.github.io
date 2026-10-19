@@ -217,6 +217,10 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
 .talks .chapter-count{min-height:57px}.talks .chapter-rail p{max-width:190px}
 .talk-row p{font-size:14px;line-height:1.5}.talk-landscape{opacity:.6}
 .site-footer small{font-size:11px}
+.site-footer{flex-wrap:wrap}
+.visitor-stats{display:inline-flex;align-items:center;gap:14px;flex-wrap:wrap}
+.visitor-stats>span{white-space:nowrap}
+.visitor-count{color:var(--navy);font-weight:600;font-variant-numeric:tabular-nums}
 .personal-coda{padding:28px 0 30px;margin-top:30px}
 .coda-body{min-height:152px}
 .coda-quote{font-size:clamp(25px,2.2vw,30px);line-height:1.6;min-height:0;letter-spacing:.035em}
@@ -345,7 +349,16 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
  </div>
 </section>
   </main>
-  <footer class="site-footer page-width"><small>© 2026 &nbsp; Hongwei Hu. All rights reserved.</small><small><a class="archive-link" href="./2023/12/21/NLP-project2/">ARCHIVE ↗</a> &nbsp; SUSTECH / NETWORK SCIENCE / MATHEMATICS</small></footer>
+  <footer class="site-footer page-width">
+    <small>© 2026 &nbsp; Hongwei Hu. All rights reserved.</small>
+    <small class="visitor-stats" aria-label="Site visit statistics provided by Busuanzi">
+      <span id="busuanzi_container_site_uv" style="display:none" title="Estimated visitors, as counted by Busuanzi">VISITORS <span class="visitor-count" id="busuanzi_value_site_uv">—</span></span>
+      <span id="busuanzi_container_site_pv" style="display:none" title="Total page views; repeat visits are included">VIEWS <span class="visitor-count" id="busuanzi_value_site_pv">—</span></span>
+    </small>
+    <small><a class="archive-link" href="./2023/12/21/NLP-project2/">ARCHIVE ↗</a> &nbsp; SUSTECH / NETWORK SCIENCE / MATHEMATICS</small>
+  </footer>
+  <!-- Load asynchronously so the counter never blocks the homepage. -->
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="./gem-lyrics.js?v=20261002"></script>
 <script>
 (()=>{
