@@ -253,6 +253,24 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
  .research-card p{font-size:15px}.project-card{grid-template-columns:36% minmax(0,1fr)}
  .project-card p{font-size:15px}.coda-quote{font-size:23px;line-height:1.7}
 }
+
+/* Official album sources, kept within the personal coda. */
+.coda-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:15px;flex-wrap:wrap}
+.coda-filter-label{font:400 12px/1.5 var(--sans);color:var(--muted)}
+.coda-filter{margin-left:8px;max-width:100%;border:1px solid var(--line);border-radius:2px;background:var(--paper-light);color:var(--navy);padding:7px 26px 7px 9px;font:400 12px/1.5 var(--sans);min-height:38px}
+.coda-source{font:400 12px/1.5 var(--sans);color:var(--muted);text-underline-offset:4px}
+.coda-source:hover,.revelation-track:hover{color:var(--red)}
+.revelation-album{margin-top:24px;border-top:1px solid var(--line);font-family:var(--sans)}
+.revelation-album summary{padding:15px 0;cursor:pointer;color:var(--navy);font-size:13px;line-height:1.6}
+.revelation-album summary span{margin-left:8px;color:var(--muted);font-size:11px}
+.revelation-intro{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 12px}
+.revelation-intro a{text-underline-offset:3px}
+.revelation-tracks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px;padding:0;margin:0;list-style:none}
+.revelation-track{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid var(--line);font-size:13px;text-decoration:none;min-height:44px}
+.revelation-track-number{font:400 10px/1.6 var(--mono);color:var(--muted)}
+.revelation-track-title{flex:1}.revelation-track-arrow{font-size:12px;color:var(--muted)}
+.coda-filter:focus-visible,.coda-source:focus-visible,.revelation-track:focus-visible,.revelation-album summary:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+@media(max-width:470px){.revelation-tracks{grid-template-columns:1fr}.revelation-album summary span{display:block;margin-left:16px}.coda-toolbar{gap:8px}}
 </style>
 </head>
 <body>
@@ -322,7 +340,8 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
     <section class="chapter publications" id="publications" aria-labelledby="publications-h">
       <div class="chapter-rail"><div class="chapter-count"><span>02</span><i class="accent accent-red"></i></div><h2 id="publications-h">Selected<br>publications</h2><p>Representative work on network science, prediction, and decision making.</p><a class="rail-link" href="https://scholar.google.com/citations?user=fZw9sV8AAAAJ" target="_blank" rel="noopener noreferrer">VIEW FULL LIST <span aria-hidden="true">→</span></a></div>
       <div class="publication-list chapter-body">
-        <article class="publication-row"><span class="pub-year">2026</span><div class="pub-details"><h3><a href="https://doi.org/10.1016/j.physrep.2026.01.001" target="_blank" rel="noopener noreferrer">Predictability of complex systems</a></h3><p>En Xu, Yilin Bi, <strong>Hongwei Hu</strong>, et al. &nbsp; <strong>Physics Reports</strong> 1166, 1–107.</p></div><a href="https://doi.org/10.1016/j.physrep.2026.01.001" target="_blank" rel="noopener noreferrer" aria-label="DOI: Predictability of complex systems">DOI ↗</a></article>
+        <article class="publication-row"><span class="pub-year">2026</span><div class="pub-details"><h3><a href="https://arxiv.org/abs/2610.22971" target="_blank" rel="noopener noreferrer">Sharp asymptotics for the Lovász number of random circulant graphs</a></h3><p>Xin Chen, <strong>Hongwei Hu</strong>, Yanqing Hu, Wei Wang, Luzhen Yang. &nbsp; arXiv:2610.22971. Preprint.</p></div><a href="https://arxiv.org/abs/2610.22971" target="_blank" rel="noopener noreferrer" aria-label="arXiv: Sharp asymptotics for the Lovász number of random circulant graphs">arXiv ↗</a></article>
+        <article class="publication-row"><span class="pub-year">2026</span><div class="pub-details"><h3><a href="https://doi.org/10.1016/j.physrep.2026.01.001" target="_blank" rel="noopener noreferrer">Predictability of complex systems</a></h3><p>En Xu, Yilin Bi, <strong>Hongwei Hu</strong>, Xin Chen, Zhiwen Yu, Yong Li, Yanqing Hu, Tao Zhou. &nbsp; <strong>Physics Reports</strong> 1166, 1–107.</p></div><a href="https://doi.org/10.1016/j.physrep.2026.01.001" target="_blank" rel="noopener noreferrer" aria-label="DOI: Predictability of complex systems">DOI ↗</a></article>
         <article class="publication-row"><span class="pub-year">2025</span><div class="pub-details"><h3><a href="https://arxiv.org/abs/2512.08209" target="_blank" rel="noopener noreferrer">Restoring Network Evolution from Static Structure</a></h3><p>Jiu Zhang, Zhanwei Du, <strong>Hongwei Hu</strong>, et al. &nbsp; arXiv:2512.08209. Preprint.</p></div><a href="https://arxiv.org/abs/2512.08209" target="_blank" rel="noopener noreferrer" aria-label="arXiv: Restoring Network Evolution from Static Structure">arXiv ↗</a></article>
         <article class="publication-row"><span class="pub-year">2023</span><div class="pub-details"><h3><a href="https://doi.org/10.1038/s41591-022-02177-4" target="_blank" rel="noopener noreferrer">A sequential re-opening of provinces for China’s zero-COVID policy</a></h3><p>Cong Xu, Xiangrong Wang, <strong>Hongwei Hu</strong>, et al. &nbsp; <strong>Nature Medicine</strong> 29, 2977–2978. <strong class="cofirst">Co-first author</strong></p></div><a href="https://doi.org/10.1038/s41591-022-02177-4" target="_blank" rel="noopener noreferrer" aria-label="DOI: A sequential re-opening of provinces for China's zero-COVID policy">DOI ↗</a></article>
       </div>
@@ -344,8 +363,29 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
 <section class="personal-coda" id="personal-note" aria-label="邓紫棋歌词摘句">
  <div class="coda-label"><i class="coda-square" aria-hidden="true"></i><div>GEM</div></div>
  <div class="coda-body">
+  <div class="coda-toolbar"><label class="coda-filter-label" for="gem-filter">摘句<select class="coda-filter" id="gem-filter"><option value="all">全部歌曲</option><option value="revelation">启示录</option></select></label><a class="coda-source" id="gem-source" href="https://www.youtube.com/watch?v=D9ksLn6hZ7Q" target="_blank" rel="noopener noreferrer">查看来源 ↗</a></div>
   <p class="coda-quote" id="gem-quote" aria-live="polite" aria-atomic="true">未来何从何去，你快乐我也就没关系。</p>
   <div class="coda-meta"><p class="coda-credit" id="gem-credit"><b>G.E.M. 邓紫棋</b><span>／</span>《多远都要在一起》</p><button class="coda-next" id="gem-next" type="button">换一句<span aria-hidden="true">↗</span></button></div>
+  <details class="revelation-album">
+   <summary>《启示录》<span>14 首 · 官方 MV 与歌曲入口</span></summary>
+   <p class="revelation-intro">G.E.M. 邓紫棋 · 2022<br>按<a href="https://cn.iamgem.com/qishilu/" target="_blank" rel="noopener noreferrer">官方专辑页</a>曲序排列。点击歌名观看官方 MV；<a href="https://cn.iamgem.com/video/gemdengziqiqishiluofficial-mvlianxuju-quanluchengban-music-seriesrevelationthe-p/" target="_blank" rel="noopener noreferrer">完整音乐连续剧 ↗</a></p>
+   <ol class="revelation-tracks">
+    <li><a class="revelation-track" data-song="少年与海" href="https://cn.iamgem.com/video/g-e-m-dengziqishaonianyuhaiguanfangmv-dibazhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="少年与海，官方 MV"><span class="revelation-track-number">01</span><span class="revelation-track-title">少年与海</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="HELL" href="https://cn.iamgem.com/video/g-e-m-dengziqihellguanfangmv-dierzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="HELL，官方 MV"><span class="revelation-track-number">02</span><span class="revelation-track-title">HELL</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="只有我和你的地方" href="https://cn.iamgem.com/video/g-e-m-dengziqizhiyouwohenidedefangguanfangmv-disanzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="只有我和你的地方，官方 MV"><span class="revelation-track-number">03</span><span class="revelation-track-title">只有我和你的地方</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="你不是第一个离开的人" href="https://cn.iamgem.com/video/g-e-m-dengziqinibushidiyigelikaiderenguanfangmv-disizhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="你不是第一个离开的人，官方 MV"><span class="revelation-track-number">04</span><span class="revelation-track-title">你不是第一个离开的人</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="不想回家" href="https://cn.iamgem.com/video/g-e-m-dengziqibuxianghuijiaguanfangmv-diwuzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="不想回家，官方 MV"><span class="revelation-track-number">05</span><span class="revelation-track-title">不想回家</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="冰河时代" href="https://cn.iamgem.com/video/g-e-m-dengziqibingheshidaiguanfangmv-diqizhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="冰河时代，官方 MV"><span class="revelation-track-number">06</span><span class="revelation-track-title">冰河时代</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="受难曲" href="https://cn.iamgem.com/video/g-e-m-dengziqishounanquguanfangmv-diliuzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="受难曲，官方 MV"><span class="revelation-track-number">07</span><span class="revelation-track-title">受难曲</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="GLORIA" href="https://cn.iamgem.com/video/g-e-m-dengziqigloriaguanfangmv-diyizhangqishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="GLORIA，官方 MV"><span class="revelation-track-number">08</span><span class="revelation-track-title">GLORIA</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="老人与海" href="https://cn.iamgem.com/video/g-e-m-dengziqilaorenyuhaiguanfangmv-dijiuzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="老人与海，官方 MV"><span class="revelation-track-number">09</span><span class="revelation-track-title">老人与海</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="FIND YOU" href="https://cn.iamgem.com/video/g-e-m-dengziqifind-youguanfangmv-dishizhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="FIND YOU，官方 MV"><span class="revelation-track-number">10</span><span class="revelation-track-title">FIND YOU</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="离心力" href="https://cn.iamgem.com/video/g-e-m-dengziqilixinliguanfangmv-dishiyizhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="离心力，官方 MV"><span class="revelation-track-number">11</span><span class="revelation-track-title">离心力</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="让世界暂停一分钟" href="https://cn.iamgem.com/video/g-e-m-dengziqirangshijiezantingyifenzhongguanfangmv-dishierzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="让世界暂停一分钟，官方 MV"><span class="revelation-track-number">12</span><span class="revelation-track-title">让世界暂停一分钟</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="夜的尽头" href="https://cn.iamgem.com/video/g-e-m-dengziqiyedejintouguanfangmv-dishisanzhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="夜的尽头，官方 MV"><span class="revelation-track-number">13</span><span class="revelation-track-title">夜的尽头</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="revelation-track" data-song="天空没有极限" href="https://cn.iamgem.com/video/g-e-m-dengziqitiankongmeiyoujixianguanfangmv-dishisizhang-qishilurevelation/" target="_blank" rel="noopener noreferrer" aria-label="天空没有极限，官方 MV"><span class="revelation-track-number">14</span><span class="revelation-track-title">天空没有极限</span><span class="revelation-track-arrow" aria-hidden="true">↗</span></a></li>
+   </ol>
+  </details>
  </div>
 </section>
   </main>
@@ -358,17 +398,37 @@ img,svg{max-width:100%}figure,h1,h2,h3,p{margin:0}
   </footer>
   <!-- Load asynchronously so the counter never blocks the homepage. -->
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="./gem-lyrics.js?v=20261002"></script>
+<script src="./gem-lyrics.js?v=20261102"></script>
 <script>
 (()=>{
- const lines=Array.isArray(window.GEM_LYRICS)?window.GEM_LYRICS.filter(x=>x&&typeof x.text==='string'&&x.text.trim()):[];
- if(!lines.length){document.getElementById('personal-note').hidden=true;return;}
- const q=document.getElementById('gem-quote'),button=document.getElementById('gem-next');
- const key='hhw-gem-last-id-v1';let last=-1;try{const id=localStorage.getItem(key);last=lines.findIndex(x=>x.id===id)}catch(e){}
- function pickOther(previous){if(lines.length===1)return 0;const n=Math.floor(Math.random()*(lines.length-(previous>=0&&previous<lines.length?1:0)));return previous>=0&&previous<lines.length&&n>=previous?n+1:n;}
- let index=pickOther(last);
- function render(){q.textContent=lines[index].text;document.getElementById('gem-credit').textContent='G.E.M. 邓紫棋 ／《'+lines[index].song+'》';button.hidden=lines.length<2;try{localStorage.setItem(key,lines[index].id)}catch(e){}}
- render();button.addEventListener('click',()=>{button.disabled=true;q.classList.add('changing');setTimeout(()=>{index=pickOther(index);render();q.classList.remove('changing');button.disabled=false},matchMedia('(prefers-reduced-motion: reduce)').matches?0:180)});
+ const allLines=Array.isArray(window.GEM_LYRICS)?window.GEM_LYRICS.filter(x=>x&&typeof x.text==='string'&&x.text.trim()):[];
+ const q=document.getElementById('gem-quote'),button=document.getElementById('gem-next'),filter=document.getElementById('gem-filter'),source=document.getElementById('gem-source');
+ const officialSources=new Map(Array.from(document.querySelectorAll('.revelation-track'),a=>[a.dataset.song,a.href]));
+ let lines=allLines.slice(),index=-1,timer;
+ const key='hhw-gem-last-id-v1';let lastId=null;
+ try{lastId=localStorage.getItem(key)}catch(e){}
+ function pickOther(previous){if(lines.length<2)return 0;const n=Math.floor(Math.random()*(lines.length-(previous>=0&&previous<lines.length?1:0)));return previous>=0&&previous<lines.length&&n>=previous?n+1:n;}
+ function render(){
+  if(!lines.length){q.textContent='暂无摘句';document.getElementById('gem-credit').textContent='G.E.M. 邓紫棋';button.hidden=true;source.hidden=true;return;}
+  const line=lines[index];q.textContent=line.text;
+  document.getElementById('gem-credit').textContent='G.E.M. 邓紫棋 ／《'+line.song+'》';
+  const url=officialSources.get(line.song)||line.sourceUrl;
+  source.hidden=!url;if(url)source.href=url;
+  source.textContent=officialSources.has(line.song)?'官方 MV ↗':'查看来源 ↗';
+  source.setAttribute('aria-label','《'+line.song+'》'+(officialSources.has(line.song)?'官方 MV':'歌词来源'));
+  button.hidden=lines.length<2;lastId=line.id;
+  try{localStorage.setItem(key,lastId)}catch(e){}
+ }
+ function resetPool(){
+  clearTimeout(timer);button.disabled=false;q.classList.remove('changing');
+  lines=filter.value==='revelation'?allLines.filter(x=>officialSources.has(x.song)):allLines.slice();
+  index=pickOther(lines.findIndex(x=>x.id===lastId));render();
+ }
+ resetPool();filter.addEventListener('change',resetPool);
+ button.addEventListener('click',()=>{
+  button.disabled=true;q.classList.add('changing');
+  timer=setTimeout(()=>{index=pickOther(index);render();q.classList.remove('changing');button.disabled=false},matchMedia('(prefers-reduced-motion: reduce)').matches?0:180);
+ });
 })();
 </script>
 </body>
